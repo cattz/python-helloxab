@@ -18,6 +18,7 @@ EOF
     exit 1
 fi
 
+set -x
 
 repo_path=${1}
 increase=${2-patch}
@@ -70,8 +71,9 @@ function autoversion(){
     fi
 }
 
-if [ -n "${BUILD_VERSION+x}" ]; then
-    echo "${BUILD_VERSION}"
-else
+if [ -z "${BUILD_VERSION}" ]; then
     autoversion
+
+else
+    echo "${BUILD_VERSION}"
 fi
