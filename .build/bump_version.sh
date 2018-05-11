@@ -25,7 +25,7 @@ increase=${2-patch}
 
 BUILD_VERSION=${BAMBOO_BUILD_VERSION}
 CI_BUILD_NUMBER=${bamboo_buildNumber}
-CI_BRANCH=${bamboo_branchName}
+CI_BRANCH=${bamboo_repository_branch_name}
 
 
 function autoversion(){
