@@ -1,0 +1,3 @@
+include hello/VERSION
+include LICENSE
+include README.md
