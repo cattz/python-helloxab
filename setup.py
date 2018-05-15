@@ -4,7 +4,7 @@ import os
 version_file = os.path.join('hello', 'VERSION')
 
 setup(
-    name='python-helloxab',
+    name='helloxab',
     version=open(version_file, 'r').read().strip(),
     packages=['hello'],
     url='',
